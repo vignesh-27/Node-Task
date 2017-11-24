@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <!--Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <style>
+    body {
+        background-image: url("<%= image.background %>");
+        background-position: absolute;
+    } 
+</style>
+
+</head>
+<body >
+        <!-- Navigation Bar -->
+        <nav id="nav" class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <% for(var i=0; i < data.length ; i++){ %>
+                 <li><a href="<%= data[i].link %>"><%= data[i].name %></a></li>
+                 <% } %>
+           </ul>
+           </div>
+        </nav>
+
+        <div id="home">
+             <h2 style = "<%= font.margin %><%= font.size %><%= font.family %>">
+                <b><center> Wel<font style = "<%= font.color %>">come</font> To 
+                <font style = "<%= font.color %>">Adappt</font> World</center></b></h2>
+
+             <img id="img" style ="<%= image.margin_l + image.margin_t + image.height + image.width + image.opacity %>" 
+                src="<%= image.logo %>" />
+        </div>
+
+</body>
+</html>
