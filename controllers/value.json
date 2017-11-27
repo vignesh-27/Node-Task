@@ -1,0 +1,22 @@
+{
+    "data":[{"name":"Index", "link":"/"},
+    {"name":"Career", "link":"/career"},
+    {"name":"Contact Us", "link":"/contact"}
+    ],
+"font":{
+    "margin":"margin-top:120px;", 
+    "size":"font-size:40px;",
+    "family":"font-family:olivia;", 
+    "color":"color:orange;"
+},
+"img":{
+    "background":"assets/images/bg6.jpeg", 
+    "logo":"/assets/images/adapt-logo.png", 
+    "margin_l":"margin-left: 400px;",
+    "margin_t":"margin-top: 60px;", 
+    "height": "350px;", 
+    "width": "500px;", 
+    "opacity":"0.4;"
+}
+
+}
