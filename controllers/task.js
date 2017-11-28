@@ -4,7 +4,7 @@ var obj = require('./value.json'); //including json data objects
 module.exports = (app)=>{
 
 app.get('/',  (req,res)=>{
-    res.render('index', {data: obj.data, font:obj.font, image:obj.img});
+    res.render('index', {data: obj});
 });
 
 app.get('/career', (req, res)=>{

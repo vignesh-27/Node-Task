@@ -1,5 +1,5 @@
 {
-    "data":[{"name":"Index", "link":"/"},
+    "nav":[{"name":"Index", "link":"/"},
     {"name":"Career", "link":"/career"},
     {"name":"Contact Us", "link":"/contact"}
     ],

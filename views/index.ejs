@@ -17,7 +17,7 @@
 
  <style>
     body {
-        background-image: url("<%= image.background %>");
+        background-image: url("<%= data.img.background %>");
         background-position: absolute;
     } 
 </style>
@@ -28,20 +28,20 @@
         <nav id="nav" class="navbar navbar-inverse">
             <div class="container-fluid">
             <ul class="nav navbar-nav">
-                <% for(var i=0; i < data.length ; i++){ %>
-                 <li><a href="<%= data[i].link %>"><%= data[i].name %></a></li>
+                <% for(var i=0; i < data.nav.length ; i++){ %>
+                 <li><a href="<%= data.nav[i].link %>"><%= data.nav[i].name %></a></li>
                  <% } %>
            </ul>
            </div>
         </nav>
 
         <div id="home">
-             <h2 style = "<%= font.margin + font.size + font.family %>">
-                <b><center> Wel<font style = "<%= font.color %>">come</font> To 
-                <font style = "<%= font.color %>">Adappt</font> World</center></b></h2>
+             <h2 style = "<%= data.font.margin + data.font.size + data.font.family %>">
+                <b><center> Wel<font style = "<%= data.font.color %>">come</font> To 
+                <font style = "<%= data.font.color %>">Adappt</font> World</center></b></h2>
 
-             <img id="img" style ="<%= image.margin_l + image.margin_t + image.height + image.width + image.opacity %>" 
-                src="<%= image.logo %>" />
+             <img id="img" style ="<%= data.img.margin_l + data.img.margin_t + data.img.height + data.img.width + data.img.opacity %>" 
+                src="<%= data.img.logo %>" />
         </div>
 
 </body>
